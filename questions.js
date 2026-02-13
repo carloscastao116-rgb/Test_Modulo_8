@@ -1,167 +1,112 @@
 const questionsData = [
     {
-        question: "¿Cuál era la principal preocupación del movimiento 'cypherpunk' en los años 70 y 80?",
+        question: "¿Cuál era la principal preocupación del movimiento 'cypherpunk'?",
         options: {
             A: "La rentabilidad de las inversiones digitales",
-            B: "La pérdida de privacidad en el entorno digital debido a los intermediarios",
-            C: "La velocidad de las transacciones bancarias",
-            D: "La creación de redes sociales descentralizadas"
+            B: "La pérdida de privacidad debido a los intermediarios centralizados",
+            C: "La velocidad de las redes WiFi",
+            D: "La creación de redes sociales"
         },
         answer: "B",
-        [cite_start]explanation: "Los cypherpunks buscaban proteger la libertad individual y la privacidad frente a la vigilancia y censura de intermediarios centralizados[cite: 10, 11, 12]."
+        explanation: "Los cypherpunks buscaban proteger la libertad individual y la privacidad frente a la vigilancia de terceros mediante la criptografía."
     },
     {
-        question: "¿Qué gran problema del dinero digital resolvió Satoshi Nakamoto con el Whitepaper de Bitcoin?",
+        question: "¿Qué problema histórico del dinero digital resolvió Satoshi Nakamoto?",
         options: {
-            A: "La falta de anonimato total",
-            B: "El alto consumo energético",
-            C: "El problema del doble gasto sin necesidad de un tercero centralizado",
-            D: "La lentitud de los servidores gubernamentales"
+            A: "El coste de las tarjetas de crédito",
+            B: "La falta de internet en zonas rurales",
+            C: "El problema del doble gasto sin un tercero de confianza",
+            D: "La inflación del dólar"
         },
         answer: "C",
-        [cite_start]explanation: "Bitcoin permite realizar pagos P2P asegurando que el dinero no pueda copiarse ni duplicarse (doble gasto) a través de una red descentralizada[cite: 16, 17, 20, 22]."
+        explanation: "Bitcoin permitió por primera vez que un activo digital no pudiera ser duplicado sin necesidad de que un banco lo validara."
     },
     {
-        question: "En el ecosistema de Bitcoin, ¿cuál es la función principal de los nodos?",
+        question: "En Bitcoin, ¿cuál es la función de los nodos?",
         options: {
-            A: "Resolver problemas matemáticos para emitir nuevas monedas",
+            A: "Emitir nuevos préstamos",
             B: "Verificar que todas las transacciones cumplan las reglas del protocolo",
-            C: "Fabricar las hardware wallets",
-            D: "Fijar el precio de mercado del activo"
+            C: "Vender hardware wallets",
+            D: "Fijar el precio del Bitcoin"
         },
         answer: "B",
-        [cite_start]explanation: "Los nodos son el control descentralizado; ellos verifican el cumplimiento de las reglas y rechazan bloques inválidos[cite: 26, 142, 215]."
+        explanation: "Los nodos son los auditores de la red; aseguran que nadie haga trampas y que se respeten las reglas de consenso."
     },
     {
-        question: "¿Qué define la propiedad de un activo en la red Bitcoin?",
+        question: "¿Qué define realmente la propiedad de un Bitcoin?",
         options: {
-            A: "La posesión física de un dispositivo hardware wallet",
-            B: "El reconocimiento de un banco o registro estatal",
-            C: "El control exclusivo de la información criptográfica (clave privada/semilla)",
-            D: "El nombre del titular registrado en la blockchain"
+            A: "Tener el archivo descargado en el móvil",
+            B: "Un registro en el Banco de España",
+            C: "El control de las claves privadas (la semilla)",
+            D: "El nombre de usuario y contraseña de un exchange"
         },
         answer: "C",
-        [cite_start]explanation: "La propiedad se basa en el control de las claves privadas; el conocimiento de la semilla permite reconstruir el acceso en cualquier momento[cite: 36, 39, 41]."
+        explanation: "En Bitcoin, 'tus llaves, tus bitcoins'. La propiedad reside en el conocimiento de la clave criptográfica privada."
     },
     {
-        question: "¿Por qué se afirma que Bitcoin es una categoría económica distinta a otras criptomonedas?",
+        question: "¿Por qué Bitcoin se considera una categoría económica distinta a otras criptomonedas?",
         options: {
-            A: "Porque fue la primera en subir de precio",
-            B: "Porque no depende de una fundación, equipo gestor o empresa que cambie sus reglas",
-            C: "Porque es la única que utiliza una blockchain",
-            D: "Porque solo puede comprarse con dólares"
+            A: "Porque es la más cara",
+            B: "Porque no tiene un líder, fundación o empresa que pueda cambiar sus reglas",
+            C: "Porque usa una base de datos centralizada",
+            D: "Porque solo se puede usar en El Salvador"
         },
         answer: "B",
-        [cite_start]explanation: "A diferencia de otros proyectos que funcionan como startups con líderes, Bitcoin no tiene dirección ni entidad que altere su política monetaria[cite: 52, 54, 55]."
+        explanation: "La ausencia de un 'punto central de fallo' o equipo gestor hace que Bitcoin sea un descubrimiento, no solo un invento corporativo."
     },
     {
-        question: "Desde el punto de vista económico, ¿cuál es el encaje principal de Bitcoin actualmente?",
+        question: "¿Qué es la 'semilla' (seed phrase) en la autocustodia?",
         options: {
-            A: "Medio de intercambio cotidiano para micro-pagos",
-            B: "Reserva de valor estable sin volatilidad",
-            C: "Depósito de valor que compite con el oro o los inmuebles",
-            D: "Un activo financiero estatal"
+            A: "Una clave que se planta en el ordenador",
+            B: "Una secuencia de 12 o 24 palabras que permite recuperar el acceso a los fondos",
+            C: "El código de barras de la billetera",
+            D: "El número de teléfono asociado a la cuenta"
+        },
+        answer: "B",
+        explanation: "La semilla es la representación mnemónica de tus claves privadas; si pierdes tu dispositivo, con ella recuperas tu dinero."
+    },
+    {
+        question: "¿Cuál es el objetivo de la 'Lightning Network'?",
+        options: {
+            A: "Hacer que Bitcoin sea más caro",
+            B: "Permitir pagos instantáneos y casi gratuitos a gran escala",
+            C: "Minar bloques más rápido",
+            D: "Cambiar Bitcoin por oro automáticamente"
+        },
+        answer: "B",
+        explanation: "Es una 'capa 2' diseñada para que Bitcoin sea usable como medio de pago diario sin colapsar la red principal."
+    },
+    {
+        question: "¿Qué es el 'Proof of Work' (Prueba de Trabajo)?",
+        options: {
+            A: "Un contrato laboral para mineros",
+            B: "Un mecanismo que vincula el mundo digital con el gasto de energía física para dar seguridad",
+            C: "Un sistema de votación por correo",
+            D: "Una prueba de identidad del usuario"
+        },
+        answer: "B",
+        explanation: "El PoW asegura la red haciendo que sea prohibitivamente caro intentar atacar o modificar el historial de transacciones."
+    },
+    {
+        question: "¿Cómo tributa la minería de Bitcoin en España según los apuntes?",
+        options: {
+            A: "Está exenta de impuestos",
+            B: "Tributa en el IRPF por el valor de mercado del bitcoin en el momento de su obtención",
+            C: "Solo tributa si lo pasas a euros",
+            D: "Tributa como un premio de lotería"
+        },
+        answer: "B",
+        explanation: "La obtención de monedas mediante minería se considera una actividad económica sujeta a tributación desde el momento de la recepción."
+    },
+    {
+        question: "¿Qué evento activa la tributación en el IRPF para un inversor común?",
+        options: {
+            A: "Mirar el precio en una App",
+            B: "Comprar Bitcoin con euros",
+            C: "Un evento de transmisión (venta o permuta por otra cripto)",
+            D: "Descargar un monedero digital"
         },
         answer: "C",
-        [cite_start]explanation: "Su oferta limitada y resistencia a la censura lo sitúan como un depósito de valor, aunque no es una reserva estable debido a su volatilidad[cite: 69, 70, 114]."
-    },
-    {
-        question: "¿Qué efecto tiene Bitcoin sobre la capacidad de los Estados según los apuntes?",
-        options: {
-            A: "Destruye automáticamente la soberanía nacional",
-            B: "Actúa como un límite externo a la capacidad de abuso fiscal y monetario",
-            C: "Permite a los Estados imprimir más dinero sin inflación",
-            D: "Elimina la necesidad de fronteras físicas"
-        },
-        answer: "B",
-        [cite_start]explanation: "Al permitir atesorar riqueza fuera del control tradicional, obliga a los Estados a moderar sus comportamientos para evitar la fuga de capital[cite: 86, 87, 88]."
-    },
-    {
-        question: "¿Qué es la 'semilla' (seed phrase) en una cartera de Bitcoin?",
-        options: {
-            A: "La contraseña para encender la computadora",
-            B: "Una secuencia de 12 o 24 palabras que permite recuperar todas las claves privadas",
-            C: "El código fuente del software de Bitcoin",
-            D: "El número de serie de la hardware wallet"
-        },
-        answer: "B",
-        [cite_start]explanation: "La semilla abstrae la complejidad criptográfica y permite restaurar la propiedad del activo incluso si se pierde el hardware[cite: 39, 202, 209]."
-    },
-    {
-        question: "¿Cuál es la función del mecanismo 'Proof of Work' (Prueba de Trabajo)?",
-        options: {
-            A: "Identificar legalmente a los usuarios de la red",
-            B: "Convertir energía y hardware en seguridad verificable para el registro",
-            C: "Acelerar las transacciones para que sean instantáneas",
-            D: "Permitir que los bancos centrales controlen la emisión"
-        },
-        answer: "B",
-        [cite_start]explanation: "El Proof of Work sella los bloques y hace que alterar el historial sea extremadamente costoso, alineando los incentivos de la red[cite: 134, 135, 173]."
-    },
-    {
-        question: "¿Qué distingue a una blockchain pública 'permissionless' como Bitcoin?",
-        options: {
-            A: "Que solo las empresas autorizadas pueden validar datos",
-            B: "Que cualquier usuario puede consultar la información y cualquier nodo participar en la validación",
-            C: "Que los datos pueden ser borrados por consenso del gobierno",
-            D: "Que no requiere conexión a internet"
-        },
-        answer: "B",
-        [cite_start]explanation: "En sistemas públicos y sin permiso, no hay restricciones para unirse a la red o auditar el registro[cite: 263, 266]."
-    },
-    {
-        question: "¿Para qué sirve la tecnología 'Lightning Network'?",
-        options: {
-            A: "Para aumentar el número máximo de bitcoins que existirán",
-            B: "Para permitir pagos rápidos, frecuentes y de bajo coste fuera de la capa base",
-            C: "Para minar bitcoins usando menos energía",
-            D: "Para conectar la blockchain con el sistema de impuestos"
-        },
-        answer: "B",
-        [cite_start]explanation: "Lightning es una solución que permite usar Bitcoin para pagos cotidianos de forma eficiente y con mayor privacidad[cite: 257, 258]."
-    },
-    {
-        question: "En la fiscalidad española, ¿cuándo se genera generalmente una obligación tributaria en el IRPF?",
-        options: {
-            A: "Por la mera tenencia de bitcoin en una cartera fría",
-            B: "Cuando ocurre un evento de transmisión (venta o permuta)",
-            C: "Cada vez que se descarga el software de un nodo",
-            D: "Al leer el Whitepaper de Satoshi Nakamoto"
-        },
-        answer: "B",
-        [cite_start]explanation: "La tributación suele activarse ante hechos económicos como la venta o el intercambio por otros activos[cite: 278, 281]."
-    },
-    {
-        question: "¿Cómo tributa la obtención de bitcoin mediante la actividad de minería?",
-        options: {
-            A: "Está exenta de impuestos por ser una actividad tecnológica",
-            B: "Genera tributación en el IRPF por el valor de mercado en el momento de su generación",
-            C: "Solo tributa cuando los bitcoins se venden por euros",
-            D: "Tributa como una donación del protocolo"
-        },
-        answer: "B",
-        [cite_start]explanation: "La minería se considera una actividad económica donde el valor del activo generado se integra en la base imponible[cite: 283]."
-    },
-    {
-        question: "¿Qué factor determina la localización del bitcoin a efectos del Impuesto sobre el Patrimonio?",
-        options: {
-            A: "La nacionalidad de Satoshi Nakamoto",
-            B: "Si está en custodia de un tercero o en autocustodia",
-            C: "La marca de la hardware wallet utilizada",
-            D: "El precio del activo el día de la compra"
-        },
-        answer: "B",
-        [cite_start]explanation: "La forma de custodia influye en la localización del activo y, por tanto, en las obligaciones fiscales de tenencia[cite: 288, 289]."
-    },
-    {
-        question: "¿Por qué se considera que Bitcoin tiene una 'oferta estrictamente limitada'?",
-        options: {
-            A: "Porque los mineros deciden cuántos fabricar cada día",
-            B: "Porque su política monetaria está definida en el código y no puede ser alterada por ninguna autoridad",
-            C: "Porque ya se han minado todos los posibles",
-            D: "Porque el oro limita su producción"
-        },
-        answer: "B",
-        [cite_start]explanation: "El diseño técnico garantiza un límite máximo de 21 millones, ajeno a decisiones discrecionales de gobiernos o bancos[cite: 55, 143]."
+        explanation: "La ganancia o pérdida patrimonial se genera cuando vendes el activo o lo cambias por otra criptomoneda diferente."
     }
 ];
